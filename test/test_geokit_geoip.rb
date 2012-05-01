@@ -30,6 +30,10 @@ class TestGeokitGeoip < Test::Unit::TestCase
 
     context "with a good ip" do
       setup { @ip = '67.244.97.190' }
+      should "be successful" do
+        result = @geocoder.geocode(@ip)
+        assert result.success?, result.city
+      end
       should "set the right attributes" do
         loc = @geocoder.geocode(@ip)
         assert_equal "New York", loc.city
