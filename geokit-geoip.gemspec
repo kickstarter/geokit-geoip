@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = "aaron@kickstarter.com"
   s.required_rubygems_version = ">= 1.5.0"
 
-  s.files = Dir.glob("{bin,data,lib}/**/*") + %w(LICENSE README.md Rakefile)
+  s.files = Dir.glob("{bin,data,lib}/**/*") + %w(README.md Rakefile)
   s.homepage = 'http://github.com/kickstarter/geokit-geoip'
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
