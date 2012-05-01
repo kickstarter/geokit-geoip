@@ -11,7 +11,7 @@ module Geokit
 
     # Provide geocoding based upon an IP address.  The underlying web service is maxmind.com.
     # MaxMind City is a paid-for service, provides country, region, and city. Updated every month.
-    class GeoIPCityGeocoder < Geocoder
+    class GeoIpCityGeocoder < Geocoder
       # Given an IP address, returns a GeoLoc instance which contains latitude,
       # longitude, city, and country code. Sets the success attribute to false if the ip
       # parameter does not match an ip address.

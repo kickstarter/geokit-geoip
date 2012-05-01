@@ -2,9 +2,9 @@ require File.dirname(__FILE__) + '/test_helper.rb'
 
 class TestGeokitGeoip < Test::Unit::TestCase
 
-  context "GeoIPCityGeocoder" do
+  context "GeoIpCityGeocoder" do
     setup do
-      @geocoder = Geokit::Geocoders::GeoIPCityGeocoder
+      @geocoder = Geokit::Geocoders::GeoIpCityGeocoder
     end
 
     should "have a default geoip_data_path" do
