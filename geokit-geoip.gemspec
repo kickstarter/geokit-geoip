@@ -22,5 +22,4 @@ Gem::Specification.new do |s|
   s.add_dependency 'geokit', '>= 1.5.0' # What we're using on kickstarter at the moment
   s.add_development_dependency 'rake'
   s.add_development_dependency 'shoulda'
-  s.add_development_dependency 'ruby-debug'
 end
