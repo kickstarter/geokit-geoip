@@ -40,8 +40,8 @@ class TestGeokitGeoip < Test::Unit::TestCase
         assert_equal "NY", loc.state
         assert_equal "US", loc.country_code
         assert (40..41).include?(loc.lat)
-        assert (-74..073).include?(loc.lng)
-        assert 5, loc.zip.size
+        assert (-74..-73).include?(loc.lng)
+        assert_equal 5, loc.zip.size
       end
     end
   end
